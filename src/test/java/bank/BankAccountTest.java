@@ -17,10 +17,19 @@ public class BankAccountTest {
 	}
 
 	@Test
-	public void shouldReturnAccountNumber() {
+	public void shouldReturnAccountNumber1() {
 		BankAccount underTest = new BankAccount("946d31", "Savings", 100.00);
 		String check = underTest.getAccountNumber();
 		assertEquals("946d31", check);
+	}
+	
+	@Test
+	public void shouldReturnAccountNumber2(){
+		BankAccount underTest = new BankAccount("0002", "Savings", 100.00);
+		String check = underTest.getAccountNumber();
+		assertEquals("0002", check);
+		
+		
 	}
 }
 

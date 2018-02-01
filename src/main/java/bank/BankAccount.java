@@ -7,9 +7,10 @@ public class BankAccount {
 	private double balance;
 
 	public BankAccount(String accountNumber, String type, double balance) {
+		this.accountNumber = accountNumber;
 	}
 
 	public String getAccountNumber() {
-		return "946d31";
+		return accountNumber;
 	}
 }
